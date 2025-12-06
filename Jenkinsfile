@@ -17,7 +17,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'go test ./... || echo "No tests found"'
+                bat 'go test ./... || echo "No tests found"'
             }
         }
 
